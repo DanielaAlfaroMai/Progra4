@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Lec01.Calculadora
 {
     static class Program
@@ -16,7 +17,11 @@ namespace Lec01.Calculadora
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmCalc());
         }
-    }
+
+      
+        }
+    
 }
+
