@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lec01.Calculadora
 {
-   public enum EnumeradoOperaciones
+    public enum EnumeradoOperadores
     {
-        Suma=2;
-
+        Suma = 4,
+        Resta = 17,
+        Multiplicacion = -3,
+        Division = 20,
+        Desconocido=0
     }
 }
