@@ -20,13 +20,13 @@ namespace frmConvertirGrados
         private void btnConvertirCelciusEnFahrenheit_Click(object sender, EventArgs e)
         {
             Procesos proceso = new Procesos();
-            proceso.CelsiusaFahrenheit(txtNumeroCelcius,txtNumeroFahrenheit);
+           txtNumeroFahrenheit.Text=proceso.CelsiusaFahrenheit(txtNumeroCelcius.Text);
         }
 
         private void btnConvertirFahrenhietEnCelsius_Click(object sender, EventArgs e)
         {
             Procesos proceso = new Procesos();
-            proceso.FahrenheitaCelcius(txtNumeroCelcius, txtNumeroFahrenheit);
+            txtNumeroCelcius.Text= proceso.FahrenheitaCelcius(txtNumeroFahrenheit.Text);
 
         }
     }

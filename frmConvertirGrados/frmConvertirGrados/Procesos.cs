@@ -9,17 +9,28 @@ namespace frmConvertirGrados
 {
     class Procesos
     {
-        public void CelsiusaFahrenheit(TextBox txtNumeroCelcius, TextBox txtNumeroFahrenheit) {
-            double celcius = Convert.ToDouble(txtNumeroCelcius.Text);
-            double res = (celcius * 9 / 5) + 32;
-            txtNumeroFahrenheit.Text = res.ToString();
+        public string CelsiusaFahrenheit( string Celcius) {
+            double celcius = Convert.ToDouble(Celcius);
+            string fahrenheit = CelsiusaFahrenheit(celcius);
+            return fahrenheit;
         }
-        public void FahrenheitaCelcius(TextBox txtNumeroCelcius, TextBox txtNumeroFahrenheit)
+        public string CelsiusaFahrenheit(double celcius)
         {
-            double fahrenhiet = Convert.ToDouble(txtNumeroFahrenheit.Text);
-            double res = (fahrenhiet - 32) * 5 / 9;
-            txtNumeroCelcius.Text = res.ToString();
-
+            double res = (celcius * 9 / 5) + 32;
+            string fahremheit = res.ToString();
+            return fahremheit;
+        }
+        public string FahrenheitaCelcius(string txtNumeroFahrenheit)
+        {
+            double fahrenhiet = Convert.ToDouble(txtNumeroFahrenheit);
+            string Celcius = FahrenheitaCelcius(fahrenhiet);
+            return Celcius;
+        }
+        public string FahrenheitaCelcius(double fahrenheit)
+        {
+            double res = (fahrenheit - 32) * 5 / 9;
+            string celcius = res.ToString();
+            return celcius;
         }
     }
 }
