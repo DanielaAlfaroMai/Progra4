@@ -20,14 +20,13 @@ namespace FrmConvertirMedidas
         private void btnConvertirPulgadasEnCentimetros_Click(object sender, EventArgs e)
         {
             Procesos proced = new Procesos();
-            proced.PulgadasaCentimetros(txtNumeroPulgadas, txtNumeroCentimetros);
-
+            txtNumeroCentimetros.Text = proced.PulgadasaCentimetros(txtNumeroPulgadas.Text);
         }
 
         private void btnConvertirCentimetrosEnPulgadas_Click(object sender, EventArgs e)
         {
             Procesos proced = new Procesos();
-            proced.CentimetrosaPulgadas(txtNumeroPulgadas, txtNumeroCentimetros);
+            txtNumeroPulgadas.Text = proced.CentimetrosaPulgadas(txtNumeroCentimetros.Text);
 
         }
 

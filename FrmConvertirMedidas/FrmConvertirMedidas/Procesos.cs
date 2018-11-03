@@ -9,19 +9,33 @@ namespace FrmConvertirMedidas
 {
     class Procesos
     {
-        public void PulgadasaCentimetros(TextBox txtNumeroPulgadas,TextBox txtNumeroCentimetros)
+        public string PulgadasaCentimetros(string Pulgadas)
         {
-            double pulgadas = Convert.ToDouble(txtNumeroPulgadas.Text);
-            double resp = pulgadas * 2.54;
-            txtNumeroCentimetros.Text = resp.ToString();
+            double pulgadas = Convert.ToDouble(Pulgadas);
+            string Centimetros = PulgadasaCentimetros(pulgadas);
+            return Centimetros;
         }
-        public void CentimetrosaPulgadas(TextBox txtNumeroPulgadas, TextBox txtNumeroCentimetros)
+        public string PulgadasaCentimetros(double pulgadas)
         {
-            double centimetros = Convert.ToDouble(txtNumeroCentimetros.Text);
-            double resp = centimetros / 2.54;
-            txtNumeroPulgadas.Text = resp.ToString();
+            double resp = pulgadas * 2.54;
+            string res = resp.ToString();
+            return res;
+        }
+        public string CentimetrosaPulgadas(string Centimetros)
+        {
+            double centimetros = Convert.ToDouble(Centimetros);
+            string Pulgadas = CentimetrosaPulgadas(centimetros);
+            return Pulgadas;
 
         }
+        public string CentimetrosaPulgadas(double centimetros)
+        {
+            double resp = centimetros / 2.54;
+            string res = resp.ToString();
+            return res;
+        }
+
+
 
     }
 }
