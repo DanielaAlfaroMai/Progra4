@@ -38,7 +38,9 @@ namespace Progra4.AW.Produtos.BL
 
         public IList<Product> ListarProductosPorColor(string Color)
         {
-            throw new NotImplementedException();
+            var elRepositorio = new Repositorio.Productos();
+            var elResultado = elRepositorio.ListarProdusctosPorColor(Color);
+            return elResultado;
         }
 
         public IList<Product> ListarProductosPorNombreDeCategoria(string laCategoria)

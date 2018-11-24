@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fbfa04d2-17e5-41b4-8129-7b242758fe73" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53537/WCFAWProductos.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFAWProductos.disco" MetadataType="Disco" ID="f858090f-94a2-48fa-ba93-11e0dbcb356e" SourceId="1" SourceUrl="http://localhost:53537/WCFAWProductos.svc?disco" />
+    <MetadataFile FileName="WCFAWProductos.wsdl" MetadataType="Wsdl" ID="74401f5f-170c-489e-848b-48f2c4b918f9" SourceId="1" SourceUrl="http://localhost:53537/WCFAWProductos.svc?wsdl" />
+    <MetadataFile FileName="WCFAWProductos.xsd" MetadataType="Schema" ID="99b23794-0d99-4859-99ae-63fbf6ad4c04" SourceId="1" SourceUrl="http://localhost:53537/WCFAWProductos.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFAWProductos1.xsd" MetadataType="Schema" ID="208dc1b8-85d8-49d8-9922-7e5a77618ca9" SourceId="1" SourceUrl="http://localhost:53537/WCFAWProductos.svc?xsd=xsd3" />
+    <MetadataFile FileName="WCFAWProductos2.xsd" MetadataType="Schema" ID="3f96fe40-38c8-4766-9e39-9b329fe7c89d" SourceId="1" SourceUrl="http://localhost:53537/WCFAWProductos.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFAWProductos3.xsd" MetadataType="Schema" ID="f4233c7f-43fa-410c-beba-2a256603a406" SourceId="1" SourceUrl="http://localhost:53537/WCFAWProductos.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
